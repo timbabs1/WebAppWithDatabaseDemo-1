@@ -216,7 +216,7 @@ stages:
       displayName: Validate ARM templates
       enabled: ${{ parameters.runCompletePipeline }}
       inputs:
-        azureSubscription: 'WebAppWithDatabaseDemo_spn'
+        azureSubscription: 'Azure subscription 1(176862f8-da6f-4d44-aebf-6d458f17146b)'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(ResourceGroupName)'
         location: 'West Europe'
@@ -268,7 +268,7 @@ stages:
       displayName: Deploy ARM templates
       inputs:
         deploymentScope: 'Resource Group'
-        azureResourceManagerConnection: 'WebAppWithDatabaseDemo_spn'
+        azureResourceManagerConnection: 'Azure subscription 1(176862f8-da6f-4d44-aebf-6d458f17146b)'
         subscriptionId: '4b72ed90-7ca3-4e76-8d0f-31a2c0bee7a3'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(ResourceGroupName)'
